@@ -20,11 +20,11 @@
       @csrf
       <h1 class="h3 mb-3 fw-normal">Ingresar con su cuenta de Usuario</h1>
 
-      <div class="form-floating">
+      <div class="form-floating mb-2">
         <input name="email" type="email" class="form-control" id="inputEmail" placeholder="usuario@gmail.com" required>
         <label for="inputEmail">Correo Electrónico</label>
       </div>
-      <div class="form-floating">
+      <div class="form-floating mb-2">
         <input name="password" type="password" class="form-control" id="inputPassword" placeholder="Password" required>
         <label for="inputPassword">Contraseña</label>
       </div>
