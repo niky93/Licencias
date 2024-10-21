@@ -1,7 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-success mb-4">
   <div class="container-fluid">
     <img alt="GMS-Logo" height="48" class="px-4" src="https://www.gmsantacruz.gob.bo/images/LOGO-DEL-GAMSCS-ok-02.png"/>
-    {{-- <a class="navbar-brand" href="#">Top navbar</a> --}}
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,15 +25,14 @@
 
         @auth
         <li class="nav-item">
+          <span class="nav-link active" aria-current="page">Hola <strong>{{ auth()->user()->name }}</strong></span>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{ route('users.logout') }}">Salir</a>
         </li>
         @endauth
 
       </ul>
-      {{-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> --}}
     </div>
   </div>
 </nav>
