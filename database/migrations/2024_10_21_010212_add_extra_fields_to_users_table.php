@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('last_name');
             $table->string('ci');
-            $table->string('phone');
+            $table->integer('phone');
             $table->string('address');
         });
     }

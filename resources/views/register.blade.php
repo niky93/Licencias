@@ -26,7 +26,7 @@
       <label for="inputAddress">Dirección</label>
     </div>
     <div class="form-floating mb-2">
-      <input name="phone" type="text" class="form-control" id="inputPhone" placeholder="71234568" required>
+      <input name="phone" type="number" class="form-control" id="inputPhone" placeholder="71234568" maxlength="8" required>
       <label for="inputName">Teléfono</label>
     </div>
     <div class="form-floating mb-2">
